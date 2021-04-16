@@ -5,20 +5,20 @@
 class Goal < Formula
   desc "The Go-AL formula"
   homepage "https://github.com/mas2020-golang/homebrew-goal"
-  version "0.6.0-dev2"
+  version "0.6.0-rc1"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/mas2020-golang/goal/releases/download/v0.6.0-dev2/goal_0.6.0-dev2_Darwin-x86_64.tar.gz"
-    sha256 "844183d42b04062950d6e1bc521752898ada6d4e9812711d4848010f0959ed4f"
+    url "https://github.com/mas2020-golang/goal/releases/download/v0.6.0-rc1/goal_0.6.0-rc1_Darwin-x86_64.tar.gz"
+    sha256 "d439c1b49f3bf6406be004c0aed6acbe76fe5fdbf2611ecdbe290ff19edf56f3"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/mas2020-golang/goal/releases/download/v0.6.0-dev2/goal_0.6.0-dev2_Linux-x86_64.tar.gz"
-    sha256 "190a6275a5a77da022e8cc60cbf18a2cdfb4f82ac8c07abe1c71dd78e3e9b15f"
+    url "https://github.com/mas2020-golang/goal/releases/download/v0.6.0-rc1/goal_0.6.0-rc1_Linux-x86_64.tar.gz"
+    sha256 "696454201b25748299ef325d7acd5a346af9cbdb39332f07a59535e5b49387bd"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/mas2020-golang/goal/releases/download/v0.6.0-dev2/goal_0.6.0-dev2_Linux-arm64.tar.gz"
-    sha256 "14363e4dada721cd19c86cf4fdbf9b2c232413469fdf352bc4093d350ef83ea1"
+    url "https://github.com/mas2020-golang/goal/releases/download/v0.6.0-rc1/goal_0.6.0-rc1_Linux-arm64.tar.gz"
+    sha256 "794f23753137b22993b24091eade444bee8bd69acc31818f29d216d554602191"
   end
 
   def install
